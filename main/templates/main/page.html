@@ -1,0 +1,70 @@
+<!-- main/templates/main/page.html -->
+{% extends "main/base.html" %}
+
+{% block title %}Страница{% endblock %}
+
+{% block content %}
+    <!-- Первый блок: изображение на всю ширину с отступами по бокам -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="bg-light p-3">
+                    <img src="https://via.placeholder.com/1200x400" class="img-fluid rounded" alt="Banner Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Второй блок: три продукта -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Продукт 1</h5>
+                        <p class="card-text">Описание продукта 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Продукт 2</h5>
+                        <p class="card-text">Описание продукта 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Продукт 3</h5>
+                        <p class="card-text">Описание продукта 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Третий блок: Оставить отзыв -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-3">Оставить отзыв</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Оставьте ваш отзыв"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
