@@ -1,5 +1,6 @@
 <!-- main/templates/main/page.html -->
 {% extends "main/base.html" %}
+{% load static %}
 
 {% block title %}Страница{% endblock %}
 
@@ -9,7 +10,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="bg-light p-3">
-                    <img src="https://via.placeholder.com/1200x400" class="img-fluid rounded" alt="Banner Image">
+                    <img src="{% static 'main/images/bg/bg1.jpg' %}" class="img-fluid rounded" alt="Banner Image">
                 </div>
             </div>
         </div>
@@ -20,7 +21,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card mb-4">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 1">
+                    <img src="{% static 'main/images/pr1/pr1.jpg' %}" class="card-img-top" alt="Product 1">
                     <div class="card-body">
                         <h5 class="card-title">Продукт 1</h5>
                         <p class="card-text">Описание продукта 1.</p>
